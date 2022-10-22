@@ -9,7 +9,7 @@ variable "env" {
 variable "ami" {
   type        = string
   description = " this is a variable for my ami "
-  default     = "ami-08e2d37b6a0129927"
+  default     = "ami-08c40ec9ead489470"
 }
 
 # variable for instanve type:
@@ -23,5 +23,11 @@ variable "ingress_ports" {
   type        = list(string)
   description = "This is the list of ports for Ingress Rule"
   default     = ["22", "80", "443", "3306", "53"]
+}
+
+variable "ingress_ciders" {
+  type = list(string)
+  description = "This is the cidrs for the different port we have"
+  default = [ "8.8.8.8/32", "10.0.0.0/16", "192.168.1.0/24", "0.0.0.0/0", "0.0.0.0/0" ]
 }
 
