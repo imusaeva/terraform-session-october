@@ -42,4 +42,4 @@ Executes the task
 
 
 
-Read [Terraform documentation](https://www.terraform.io/) to learn more
+Read [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs) to learn more
