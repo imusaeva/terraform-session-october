@@ -1,5 +1,7 @@
 # terraform-session-october
 
+![images](https://user-images.githubusercontent.com/85028974/197703756-9a4a6c29-e2d1-4321-b578-2f901358cf17.png)
+
 ## What is Terraform?
 Terraform is an infrastructure as code tool that lets you build, change, and version cloud and on-prem resources safely and efficiently.
 
@@ -23,14 +25,17 @@ terraform init
 terrfaorm plan
 terraform apply
 ```
-# Terraform init - first command that you always want to run. It is idempotent (run it 1000 times , result stays the same)
+# Terraform init 
+First command that you always want to run. It is idempotent (run it 1000 times , result stays the same)
 It used to initialized working directory containing terraform configuration files. It does 4 things at the background:
 - Copy a source model
 - Backend initialization
 - Child module installation
 - Plugin installation (plugin = feature). Terraform has plugin based architecture = has a lot of features.
 
-# Terraform plan - creates an execution plan. Whatever you write inside the configuration file it will do a dry run (plan of what will be done with this tasks step by step).
+# Terraform plan 
+Creates an execution plan. Whatever you write inside the configuration file it will do a dry run (plan of what will be done with this tasks step by step).
 “Dry run” = run playbook but don’t execute tasks , just show what can happen without running the commands .
 
-# Terraform apply - executes the task
+# Terraform apply - 
+Executes the task
