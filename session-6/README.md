@@ -1,4 +1,6 @@
 Session - 6 contains a terraform code that  creates  SQS service for infrastructure
+![download](https://user-images.githubusercontent.com/85028974/197710253-e69c602c-1706-4360-bc43-705aa113f854.png)
+
 # What is SQS? 
  - Amazon Simple Queue Service (SQS) lets you send, store, and receive messages between software components at any volume, without losing messages or requiring other services to be available.
 Use cases: 
