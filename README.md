@@ -40,4 +40,6 @@ Creates an execution plan. Whatever you write inside the configuration file it w
 # Terraform apply
 Executes the task
 
+
+
 Read [Terraform documentation](https://www.terraform.io/) to learn more
