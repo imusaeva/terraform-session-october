@@ -27,4 +27,4 @@ sudo echo 'Hello from ... Instance' >> /var/www/html/index.html
 D. Use your Terraform Server's Public Key for the EC2 instance.
 ```
 
-
+![1_VKTHtHwo3pUxeDP0ZmrOoA](https://user-images.githubusercontent.com/85028974/197711623-2347271b-6a31-4d84-8d48-8390154ffdc7.jpg)
