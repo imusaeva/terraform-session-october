@@ -37,5 +37,7 @@ It used to initialized working directory containing terraform configuration file
 Creates an execution plan. Whatever you write inside the configuration file it will do a dry run (plan of what will be done with this tasks step by step).
 “Dry run” = run playbook but don’t execute tasks , just show what can happen without running the commands .
 
-# Terraform apply - 
+# Terraform apply
 Executes the task
+
+Read [Terraform documentation](https://www.terraform.io/) to learn more
