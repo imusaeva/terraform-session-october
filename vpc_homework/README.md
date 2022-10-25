@@ -1,5 +1,5 @@
 Task:
-
+```
 Create VPC with the CIDR block 10.0.0.0/16 in us-east-1.
 
 Within the VPC, create the following resources:
@@ -24,5 +24,6 @@ sudo systemctl start httpd
 sudo echo 'Hello from ... Instance' >> /var/www/html/index.html
 
 D. Use your Terraform Server's Public Key for the EC2 instance.
+```
 
 
