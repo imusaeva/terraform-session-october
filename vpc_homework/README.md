@@ -28,3 +28,11 @@ D. Use your Terraform Server's Public Key for the EC2 instance.
 ```
 
 ![1_VKTHtHwo3pUxeDP0ZmrOoA](https://user-images.githubusercontent.com/85028974/197711623-2347271b-6a31-4d84-8d48-8390154ffdc7.jpg)
+
+# Steps:
+* Create a new VPC with the required CIDR blocks and subnets [aws_vpc Documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc)
+
+Created Route Tables and configured their Subnet Associations in rtb.tf and benefited from aws_route Documentation
+
+I also created Internet Gateway and NAT Gateway and associated them with my public and private subnets in igw-nat.tf file. Fot the required syntax, you can follow the NAT Gateway Documentation and Internet Gateway Documentation
+
