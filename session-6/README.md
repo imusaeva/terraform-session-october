@@ -40,3 +40,6 @@ terraform init -var-file=dev.tfvars
 If we are managing multiple environment with Folder Structure , we have to have 4 different working directories for each environment ( with all the configuration files to each environment). 
 And run terraform init after modification the environment in each working directory. You technically have to go and do copy/paste to every other environment after changes. 
 You have to be extra careful with file syntax … because single mistake will cause an error.
+
+
+More about terraform [Terraform Documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
