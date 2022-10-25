@@ -1,3 +1,4 @@
+![images](https://user-images.githubusercontent.com/85028974/197711473-69d28f16-ed55-4543-a7e5-2911f3e1afcf.png)
 Task:
 ```
 Create VPC with the CIDR block 10.0.0.0/16 in us-east-1.
