@@ -41,7 +41,6 @@ If we are managing multiple environment with Folder Structure , we have to have 
 And run terraform init after modification the environment in each working directory. You technically have to go and do copy/paste to every other environment after changes. 
 You have to be extra careful with file syntax … because single mistake will cause an error.
 
-![image](https://user-images.githubusercontent.com/107318829/198096193-55c8fc28-b409-4ae8-b211-ab48fa473e93.png)
 
 
 
