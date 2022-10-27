@@ -34,12 +34,12 @@ It will make code complicated
 aws-ue1-nonprod-dev-cat-${resource_name}
 ```
 
-# aws = cloud provider
-# ue1 = region
-# nonprod = Account
-# dev = Environment
-# cat = project
-# ${resource_name} = asg, alb, route53, rds,etc
+aws = cloud provider
+ue1 = region
+nonprod = Account
+dev = Environment
+cat = project
+${resource_name} = asg, alb, route53, rds,etc
 
 * Tagging Standard / Common Tags:
 ```
@@ -56,4 +56,4 @@ Syntax for locals.tf :
   }
 }
 ```
-In the main.tf file we merge Naming Standard and Tagging Standard using " merge" option.
+In the main.tf file we merge Naming Standard and Tagging Standard using ``` merge ``` option.
