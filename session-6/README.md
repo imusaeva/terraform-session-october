@@ -31,15 +31,18 @@ But we don’t use workspace now..
 1. FileStructure - manage all environments in one working directory which  makes it easier to maintain your environments.
 
 It is always better to deal with one than 4 working directory
-We have to create tfvars files with variables for environment and run terraform init command with a proper flag , example : 
+We have to create tfvars files with variables for environment and run terraform apply command with a proper flag , example : 
 ```
-terraform init -var-file=dev.tfvars
+terraform apply -var-file=dev.tfvars
 ```
 2. FolderStructure - each environment has it's own working directory with all configuration files.
 
 If we are managing multiple environment with Folder Structure , we have to have 4 different working directories for each environment ( with all the configuration files to each environment). 
 And run terraform init after modification the environment in each working directory. You technically have to go and do copy/paste to every other environment after changes. 
 You have to be extra careful with file syntax … because single mistake will cause an error.
+
+![image](https://user-images.githubusercontent.com/107318829/198096193-55c8fc28-b409-4ae8-b211-ab48fa473e93.png)
+
 
 
 More about terraform [Terraform Documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
