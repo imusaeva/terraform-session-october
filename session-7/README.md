@@ -6,8 +6,7 @@ versions.tf
 backend.tf
 ```
 
-![1_KqNnfYtaVshGXbuGUCTOQw](https://user-images.githubusercontent.com/85028974/198358920-7282333b-c9fc-42a0-b4c0-c897595184c2.png)
-# RDS Database
+![download](https://user-images.githubusercontent.com/85028974/198361140-b0cbb011-c624-4c16-9fcc-d8c5a195a443.png)
 
 Amazon Relational Database - is a distributed relational database service by AWS.
 It is a web service running "in the cloud" designed to simplify the setup, operation, and scaling of a relational database for use in applications.
