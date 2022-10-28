@@ -7,7 +7,7 @@ Terraform has 3 Generic Provisioners :
 * Remote exec (to run code in remote machine)
 * Local exec (to run code in local)
 
-#1 . File provissioner 
+# 1  File provissioner 
 - Sends a file from terraform local server to a web server (remote machine).
 Terraform server should be able to ssh to remote server to send a file to remove machine . 
 
@@ -45,7 +45,7 @@ Command: ``` ssh ec2-user@public_ip_address ```
 5. If you are able to ssh to remote machine check ``` /tmp folder``` if you have index.html file that we were sending from our locall machine. 
 If yes , great! Your code worked! :)
 
-#2.  Remote exec
+# 2  Remote exec
 - Runs the script on the remote machine 
 
 1. Steps are the same but we have remote exec provisioner this time:
@@ -66,7 +66,7 @@ Run ``` ls  /var/www/html``` to check if you have your index.html file on place
 3. Get IP Address and copy it to the browser. If you got the output , your code worked!
 Apache was installed and file index.html was send to the remote machine .
 
-#3 Local Exec run the script on the local machine :
+# 3 Local Exec run the script on the local machine :
 ```
 resource "null_resource" "local_script" {
   provisioner "local-exec" {
