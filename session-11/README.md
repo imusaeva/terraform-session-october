@@ -14,28 +14,29 @@ Each workspace = 1 backend file.
 
 Every time you run terraform init and terraform apply in each environment (workspace) , it will create a separate tfstate file for each environment.  
 
-* Note:
+*** Note:
 - it is very important to be at the same working directory in your terminal before switching the workspace. If you are not in the needed working directory it will be assuming default workspace.
 
 example of ``` backend.tf ``` : 
 ```
 terraform {
   backend "s3" {
-    bucket   = "aws-session-may2022-remote-backend"   # bucket
+    bucket   = "aws-session-may2022-remote-backend"     # bucket
     region   = "us-east-1"
-    key      = "terraform.tfstate"                    # for the key we not specify the environment 
-    dynamodb_table       = "terraform-may2022-state-lock-table"
-    workspace_key_prefix = "session-11"               #argument for non-default workspace 
+    key      = "terraform.tfstate"                      # for the key we not specify the environment 
+    dynamodb_table = "terraform-may2022-state-lock-table"
+    workspace_key_prefix = "session-11"                 #argument for non-default workspace 
   }
 }
 ```
-* Now we know 4 different ways tomanage multiple environments : 
+*** Now we know 4 different ways tomanage multiple environments : 
 - modules , 
 - workspace , 
 - file structure , 
 - folder structure.
 
-When we create resource , for the name we give workspace option and it will automatically update the name for each environment , example :
+When we create resource , for the name we give workspace option and it will automatically update the name for each environment , 
+example :
 ```
 resource "aws_sqs_queue" "main" {
   name = "${terraform.workspace}-sqs”            # name will be updated after the terraform apply
