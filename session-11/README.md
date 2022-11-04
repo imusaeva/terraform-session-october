@@ -1,6 +1,8 @@
 - Session-11 is for creating Amazon SQS for multiple Environments with Workspace
 
-**WorkSpace** - makes it easier to manage multiple resources in different environments. 
+![terraform_workspaces](https://user-images.githubusercontent.com/85028974/199896835-0847e822-602b-4546-b523-d4e1c8d23a8a.png)
+
+## WorkSpace - makes it easier to manage multiple resources in different environments. 
 To use Workspace we need to add an argument in backend.tf file ``` workspace_key_prefix = "sesssion-11" ``` and specify needed workspace .
 
 To check available options for workspace run : ``` terraform workspace ```
@@ -29,7 +31,7 @@ terraform {
   }
 }
 ```
-**Now we know 4 different ways tomanage multiple environments :**
+**Now we know 4 different ways to manage multiple environments :**
 - modules , 
 - workspace , 
 - file structure , 
