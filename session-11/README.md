@@ -2,7 +2,7 @@
 
 ![terraform_workspaces](https://user-images.githubusercontent.com/85028974/199896835-0847e822-602b-4546-b523-d4e1c8d23a8a.png)
 
-## WorkSpace - makes it easier to manage multiple resources in different environments. 
+## WorkSpace - makes it easier to manage resources in multiple environments. 
 To use Workspace we need to add an argument in backend.tf file ``` workspace_key_prefix = "sesssion-11" ``` and specify needed workspace .
 
 To check available options for workspace run : ``` terraform workspace ```
@@ -45,7 +45,8 @@ resource "aws_sqs_queue" "main" {
   name = "${terraform.workspace}-sqs”            # name will be updated after the terraform apply
 }
 ```
-
+The architechture of workspace created by my teacher Kris Khuslen :) 
+<img width="715" alt="Screen Shot 2022-11-04 at 12 25 09 AM" src="https://user-images.githubusercontent.com/85028974/199897385-b8eb84c5-50a5-4f76-ac7f-57c1b333277d.png">
 
 
 
